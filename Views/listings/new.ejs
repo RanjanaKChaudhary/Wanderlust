@@ -1,0 +1,62 @@
+
+
+<%- layout("/layouts/boilerplate") %>
+<body>
+    <h3>Add a New Listing</h3>
+    <br>
+    <form method="POST" action="/listings" novalidate class="needs-validation">
+    
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title] "type="string", placeholder="enter title" class="form-control" required>
+            <div class="valid-feedback">Title is Good!</div>
+
+        </div>
+    <br>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" type="text" class="form-control" required>enter description</textarea>
+        <div class="invalid-feedback">Please enter description!</div>
+        
+    </div>
+    
+
+    <br>
+    <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input name="listing[image]" type="string"  placeholder="URL/link" class="form-control">
+        <div class="invalid-feedback">Enter URL/link!</div>
+    </div>
+    
+
+    <br>
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input name="listing[price]" type="number" placeholder="enter price" class="form-control" required>
+        <div class="invalid-feedback">Please enter price!</div>
+    </div>
+    
+
+    <br>
+    <div class="mb-3">
+    <label for="location" class="form-label">Location</label>  
+    <input name="listing[location]" type="String" placeholder="enter location" class="form-control" required>
+    <div class="invalid-feedback">Please enter location!</div>
+</div>
+    
+
+    <br>
+
+    <div class="mb-3">
+        <label for="country" class="form-label">country</label>
+        <input name="listing[country]" type="String" placeholder="enter country" class="form-control" Required>
+        <div class="invalid-feedback">Enter country name!</div>
+    </div>
+    
+
+    <br>
+    <button class="btn btn-primary ">Add</button>
+    
+    </form>
+    
+</body>
