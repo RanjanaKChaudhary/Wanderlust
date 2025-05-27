@@ -8,10 +8,11 @@
         </div>
             <div class="card col-6 ">
             <img src="<%= listing.image %>" class="card-img-top" alt="Listing_image">
+          <%= listing.owner.username %>
         </div>  
     </div>
     <ul>
-        <!-- <h5><li><%= listing.title %></li></h5> -->
+        <h5><li><%= listing.title %></li></h5>
         <h5><li><%= listing.description %></li></h5>
         <h5><li>&#8377;<%=  listing.price.toLocaleString("en-IN") %> </li></h5>
         <h5><li><%= listing.location %></li></h5>
